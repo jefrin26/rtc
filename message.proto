@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package myproto;
+
+option go_package = "msg/proto"; // <- adjust this path to your actual Go import path
+
+message ChatMessage {
+  string sender = 1;
+  string text = 2;
+  int64 timestamp = 3;
+}
